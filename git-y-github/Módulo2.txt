@@ -1,0 +1,35 @@
+Módulo: comandos básicos de git
+Comandos usados :
+    git status = muestra el estado de nuestro archivo
+        (untracked(sin seguimiento),tracked(rastreando))
+    git add = envia archivos individuales al staging (es un espacio en la Ram)
+         untracked --> tracked
+    git add . = envia todos los archivos untracked a tracked, TODOS.
+    git commit al.algo -m "Descripción" = envia el archivo tracked al disco duro
+        y le asigna al archivo un identificador (hexadecimal)
+    git log = muestra los commit(o la version actual y anterioes) del archivo
+    git show = muestra lo que se ha modificado (lo que se ha agregado y quitado)
+    git reset = para volver atras,
+         suave(conserva el archivo pero vulve de commit a tracked)
+         o duro(eliminar hasta la v seleccionada)
+    git checkout = muestra el contenido de una V anterior del archivo
+         y la puede modificar o solo ver, puede commitear un V antigua como HEAD
+         pero se mantiene la V mas "nueva" en el log.
+    git log --stat = muestra en bit lo que se cambió 
+    git rm --cached tal.tal = pasa de tracked a untracked
+    git diff = compara versiones 
+        'codigo commit' 'codigo commit',
+        la primera es la mas "antigua" y la segunda la "nueva",
+        depende de como lo posiciones te muestra los cambios.
+    git reset HEAD = sacar un archivo de untracked como si nunca fuera modificado.
+        (git reset --soft HEAD~1(volver un commit atras, pero manteniendo los cambios
+        es como si te echaras para atras, como si nunca hubieras dado un paso(commit)))
+    staging = pasar un archivo a memoria ram ( vive temporalmente)
+    branch = las ramas de nuestro repositorio
+         (master,development,hotfix, etc.)
+    merge = lo que conecta las ramas del repositorio,
+        (hilo que conecta ramas)
+    - = una sola letra (ls -la)
+    -- = se coloca una palabra
+    
+    

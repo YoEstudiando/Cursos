@@ -1,0 +1,42 @@
+¿Qué es git?
+Es un controlador de versiones para tu proyecto
+    donde ya no tienes que hacer un archivo para cada nueva modificacion,
+    git tiene un historial de las modificaciones por la que ha pasado
+    un archivo y asi poder volver a el en caso de que se rompa.
+
+Quieres ver el estado de tu archivo:
+ git status.
+Quieres pasarlo de untracked a tracked:
+ "git add nombre.algo" / "git add ." (todos los archivos).
+Quieres guardar tu archivo en el disco duro: 
+ git commit nombre.algo -m "Descripcion".
+Quieres ver la historia de tu archivo :
+ git log
+Quieres ver lo que se ha cambiado en V anteriores:
+ git show
+Quieres volver a una V antigua :
+ git reset --(hard/soft)
+Quieres comparar V:
+ git diff
+No querias trackearlo:
+ git rm nombre.tal --cached
+Quieres ver los bit agregados o quitado:
+ git log --stat
+
+Cuando tú le das add a un archivo lo que sucede es ahora es seguido y de esa forma puede enviarlo al disco duro, pero
+si no tiene seguimiento no puede ser enviado. Es cómo un aeropuerto sin el pasaporte no puedes viajar.
+
+Para pasarlo a tu disco duro primero debe haber estado en la Ram y eso se le llama staging es un archivo tracked/seguimiento. O sea que un archivo ahora está en la Ram y puede pasar al Disco duro.
+
+Forma de dar parámetros en Git es con -(una letra) y --(palabra)
+
+Git tiene varias ramas/branch la rama maestro/master,es la principal, la hotfix(errores), developmen(experimentar) y tantas ramas como quieras.
+
+Para unir estas Ramas/Branch se usa Merge, es cómo un hilo(unir).
+
+                    MÓDULO 3:FLUJO DE TRABAJO BÁSICO CON GIT
+git branch tanto --> Crea una nueva rama, paralelo al main.
+git checkout tanto --> mueve hacia las ramas deseadas, a main o tanto o las que quieras.
+git branch --> ve que ramas tienes.
+git merge tanto --> si estas en la rama main mueve la rama tanto a main y al reves lo mismo.
+git commit -am "" --> es la convinacion de git add . + git commit -m "".
