@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidas</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <p>soy un texto de ejemplo</p>
+        <div>
+            <p>soy otro texto</p>
+            <div>
+                <p>soy otro texto</p>
+                <div>
+                    <p>soy otro texto</p>
+                    <div>
+                        <p>soy otro texto</p>
+                        <div>
+                            <p>soy otro texto</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+
+<!-- Medida absolute los px, no importa en que pantalla se 
+muestre siempre será lo que hayamos dicho, por ejemplo
+width:600px;, incluso si se hace mas pequeño que eso, siguirá
+siendo 600px pero ahora debemos hacer scroll horizontal.
+ -->
+ <!-- Las medidas relativas son: %, rem,em,vw,vh,
+min-width(height), max-width(height) -->
+
+<!-- la medida  EM  toma la fuente como base, si por defecto
+html da 16px entonces 1 em será 16px, si la cambiamos a 20px
+por defecto entonces 1 em será 20px;
+em toma la medida de su contenedor padre:
+    <main class="text-container">
+        <p>Hola soy un texto ejemplon para la clase</p>
+        <div> <- tiene 1.5 em
+            <p>soy otro parrafo de ejemplo.</p>  <- tiene 30px
+            <div> <- 1.5em de 30px
+                <p>soy otro parrafo de ejemplo.</p> <- 45px
+                <div> <- 1.5em de 45px
+                    <p>soy otro parrafo de ejemplo.</p> <-67.5px
+                    <div> <- 1.5em de 67.5px
+                        <p>soy otro parrafo de ejemplo.</p> <-101.25px
+                        <div> <- 1.5em de 101.25px
+                            <p>soy otro parrafo de ejemplo.</p> <-151.875px
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+body tiene un font-size:20px;
+y main tiene un font-size:1em; me daŕa 20px;
+y si le ponemos a div un font-size: 1.5em; me dará 30px;
+y si ponemos mas div dentro del div 1.5em entonces el 
+texto siempre se le agregarán la mitad, si es 30 entonces
+el hijo tendrá 45, si es 45 el hijo tendrá 67.5, si es 67.5
+entonces volvemos a sumar la mitad.Por ellos es un problema
+no controlar bien el em, ya que puede resutlar en dolor de 
+cabeza cuando lo mandamos a llamar equivocadamente.
+-->
+
+<!-- un REM siempre será 16px, lo que da html, SIEMPRE
+SERÁ 16PX.
+html
+{
+    font-size:62.5%;
+}
+p
+{
+    font-size:rem;
+}
+de ésta forma podemos hacer que cada rem valga 10px, por lo que
+0.1rem son 1px, 0.9 son 9px, es wow.
+ -->

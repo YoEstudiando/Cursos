@@ -1,0 +1,302 @@
+1️⃣ Responde las siguientes preguntas en la sección de comentarios:
+-¿Qué es una variable y para qué sirve?
+R:--la variable es un espacio hueco,
+-¿por qué es hueco?,--simple porque ahí se pueden guardar cosas,
+-¿pero hueco y espacio no es lo mismo?
+--jaja No,por ejemplo tu casa es un espacio pero no está hueco, hay cosas dentro,
+-¿Y donde está ese espacio? 
+--:) está en la memoria de tu computadora, puedes pensar en ello como una burbuja invisible ocupando
+     un lugar dentro de computadora.
+ -¿Y para que quiero una espacio invisible en mi computadora?,
+ --para guardar información
+ -ooooh¿que tipo de información?
+ --puedes guardar numeros, palabras, validacion, condiciones o nada.
+¿cómo que nada?
+jaja Ni yo entiendo eso todavia
+-aaah jajaja :).
+
+-¿Cuál es la diferencia entre declarar e inicializar una variable?
+R:Declarar es tener un espacio reservado en memoria para guardar algo e inicializar es la valor guardado 
+    en el espacio reservado.
+    
+¿Cuál es la diferencia entre sumar números y concatenar strings?
+R:Con el operador + nos permite sumar numeros cuando los usamos para numeros
+ y en los sting nos permite concatenar dos o mas cadenas de texto.
+¿Cuál operador me permite sumar o concatenar?
+R: el operador de matematica +(más);
+2️⃣ Determina el nombre y tipo de dato para almacenar en variables la siguiente información:
+Nombre:String
+Apellido:String
+Nombre de usuario en Platzi:String
+Edad:number
+Correo electrónico:String
+Mayor de edad:validacion(booleano)
+Dinero ahorrado:number
+Deudas:number
+3️⃣ Traduce a código JavaScript las variables del ejemplo anterior y deja tu código en los comentarios.
+var nombre = Ricardo
+var apellido = Donoso
+var usuarioPlatzi = Ricardo Donoso
+var edad = 19
+var correroElectronico =rndm2002@gmail.com
+var mayorDeEdad =  
+var dineroAhorrado = 0
+var deudas = 0
+4️⃣ Calcula e imprime las siguientes variables a partir de las variables del ejemplo anterior:
+Nombre completo (nombre y apellido)
+Dinero real (dinero ahorrado menos deudas)
+ var nombre = "Ricardo Nicolas";
+ var apellido = "Donoso Muñoz";
+var ahorrado = 0;
+var deudas = 0;
+var resultado = ahorrado - deudas;
+console.log(`Hola soy ${nombre} ${apellido} un gusto :) y tengo ${resultado} pesos`)
+
+Funciones
+1️⃣ Responde las siguientes preguntas en la sección de comentarios:
+¿Qué es una función?
+R:Una funcion es una serie instruccion que te ayudan a reducir las lineas de codigo
+    tambien simplifica repetir varias lineas de codigo una y otra vez,
+    nace para "automatizar" codigo repetido, compacta codigo.
+    Reutiliza bloques de código.
+
+¿Cuándo me sirve usar una función en mi código?
+R:Cuando haya un codigo que se va a repetir mucho y dar una mayor especificacion a una variable
+    de lo que debe de hacer.
+¿Cuál es la diferencia entre parámetros y argumentos de una función?
+R: parámetro son las condiciones de la funcion y los argumentos son los valores dados por 
+    nosotros o el usario, diferencias, el parametro lo eleige el programador y 
+    los argumentos el mismo o terceros.
+
+2️⃣ Convierte el siguiente código en una función, pero, cambiando cuando
+sea necesario las variables constantes por parámetros y argumentos en una función:
+const name = "Juan David";
+const lastname = "Castro Gallego";
+const completeName = name + lastname;
+const nickname = "juandc";
+
+console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
+    YO
+function miNombre(nombre, apellido,apodo)
+{
+    console.log (`Soy ${nombre} ${apellido}, tambien me puedes llamar ${apodo}`);
+};
+
+
+Condicionales
+
+
+1️⃣ Responde las siguientes preguntas en la sección de comentarios:
+¿Qué es un condicional?
+R:Es un validacion hacia un bloque de codigo de si se cumple o no. if(1<2){return true}else{return false};
+¿Qué tipos de condicionales existen en JavaScript y cuáles son sus diferencias?
+R:if ejecuta un sentencia si la condicion es verdadera
+ si es falsa, no mostrará nada a menos que le especifiquemos que lo haga
+ y switch evalua por condiciones switch(expresion)
+ {case valor1:"muestra algo si valor1 es true break; case valor2:"muetras esto si otro falló" break;}
+¿Puedo combinar funciones y condicionales?
+2️⃣ Replica el comportamiento del siguiente código que usa la sentencia switch utilizando if, else y else if:
+const tipoDeSuscripcion = "Basic";
+
+switch (tipoDeSuscripcion) {
+   case "Free":
+       console.log("Solo puedes tomar los cursos gratis");
+       break;
+   case "Basic":
+       console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+       break;
+   case "Expert":
+       console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+       break;
+   case "ExpertPlus":
+       console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+       break;
+}
+
+YO
+
+var tipoDeSuscripcion = "Expert";
+if (tipoDeSuscripcion == "Free")
+
+ {
+    console.log("Solo puedes tomar los cursos gratis");
+}else
+    if(tipoDeSuscripcion == "Basic")
+    {
+        console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+    }
+    else 
+        if(tipoDeSuscripcion == "Expert")
+        {
+            console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+        }
+        else
+            if(tipoDeSuscripcion== "ExpertPlus")
+            {
+                console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+            }
+            else
+                {
+                    console.log("Tenemos un descuento del 30%,Aprovecha Ya!.")
+                }
+
+
+3️⃣ Replica el comportamiento de tu condicional anterior con if, else y else if, 
+pero ahora solo con if (sin else ni else if).
+💡 Bonus: si ya eres una experta o experto en el lenguaje, te desafío a comentar
+ cómo replicar este comportamiento con arrays u objetos y un solo condicional. 😏
+            YO
+         function tipoDeSuscripcion(suscripcion)
+        {
+            if(suscripcion == "Free")
+            {
+                return("Solo puedes tomar los cursos gratis");
+            }
+            if(suscripcion =="Basic")
+            {
+                return("Puedes tomar casi todos los cursos de Platzi durante un mes");
+            }
+            if(suscripcion =="Expert")
+            {
+                return("Puedes tomar casi todos los cursos de Platzi durante un año");
+            }
+            if(suscripcion =="ExpertoPlus")
+            {
+                return("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+            }
+        }
+
+Ciclos
+
+1️⃣ Responde las siguientes preguntas en la sección de comentarios:
+
+¿Qué es un ciclo?
+
+R:Es una condicion que se repite hasta que devuelve false, es un codigo que se va a usar
+mucho en un proyecto cual es muy repetitivo, por lo que se crean ciclos donde se usa las condiciones del ciclo
+y esta itera hasta que devuelve false;
+
+¿Qué tipos de ciclos existen en JavaScript?
+
+R:for while do while continue for...in for...of labeled
+
+¿Qué es un ciclo infinito y por qué es un problema?
+
+R: es una mala progrmacion donde no se indica un final claro y se sigue sumando hasta el infinito, el problema
+    es que al no tener un fin consumira mas y mas recuerso cuanto mas tiempo pase saturando el servido donde
+    se aloja la paginas o proyecto.
+¿Puedo mezclar ciclos y condicionales?
+R:Si hay tipos de ciclos que necesitas condicionar para que se pueda iterar y en otras no las necesitas.
+2️⃣ Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:
+for (let i = 0; i < 5; i++) {
+    console.log("El valor de i es: " + i);
+}
+
+YO
+
+let i = 0;
+while(i<5)
+{
+    console.log("El valor de i es: " + i);
+    i++;
+}
+
+
+for (let i = 10; i >= 2; i--) {
+    console.log("El valor de i es: " + i);
+}
+
+YO
+
+let i = 10;
+while(i >=2)
+{
+    console.log("El valor de i es: " + i);
+    i--;
+}
+
+
+
+
+3️⃣ Escribe un código en JavaScript que le pregunte a los usuarios cuánto es 2 + 2.
+ Si responden bien, mostramos un mensaje de felicitaciones, pero si responden mal, volvemos a empezar.
+
+let respuesta = false
+while(!respuesta)
+{
+    let suma = prompt("Cuanto es 2 + +2")
+    if(suma == 4)
+    {
+        alert("Es correcto")
+        respuesta=true;
+    }
+}
+
+PROFESOR
+let respuesta;
+while(respuesta != '4')
+{
+    let pregunta = prompt("cuanto es 2 + 2")
+    respuesta = pregunta;
+}
+
+Listas
+1️⃣ Responde las siguientes preguntas en la sección de comentarios:
+¿Qué es un array?
+R:(Una lista de elementos) Es una lista de valor number string objetos vacios booleano,
+ los cuales con la lista puede recorrar y mutar o en otras modificar la lista a tu antojo :).
+¿Qué es un objeto?
+R: el objeto es una entidad independiente cual tiene sus propiedad y tipos.
+    por ejemplo una taza, color, el diseño, tamaño, etc.
+
+¿Cuándo es mejor usar objetos o arrays?
+
+R:Si queremos guardar una variabale con datos del mismo tipo o sea
+ numeros caracteres,booleanos etc, usamos arrays[] porque podemos acceder
+ a cada uno de ellos y son del mimos tipo.
+ Y cuando queramos guardar variables y sus valores usamos objetos{}
+PORFESOR: Arrays cuando lo que haremos en un elemento es lo mismo que en todos los demas (la regla se puede incumplir).
+Mientras que un objeto cuando los nombres de cada elemento son importante para nuestro algoritmo.
+¿Puedo mezclar arrays con objetos o incluso objetos con arrays?
+R: si
+2️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento.
+
+let numero = [0,1,2,3,4,"hola",];
+function numeroNumero(elige)
+{
+	console.log(elige[5])
+}
+numeroNumero(numero)
+
+3️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el array completo).
+
+let numero = [0,1,1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,]
+function numeroNumero(tipo)
+{
+	for(let i = 0; i < tipo.length;i++)
+	{
+		console.log(`${i + 1} ${tipo[i]}`)
+	}
+}
+numeroNumero(numero)
+
+4️⃣ Crea una función que pueda recibir cualquier objeto como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el objeto completo).
+
+let salud= {nombre:"Ricardo",años:19,pasion:"Voleibol"}
+let compañero= {nombre:"Simon",años:20,pasion:"Voleibol"}
+function saludamos(equipo)
+{
+	for(i in equipo)
+	{
+		console.log(equipo[i])
+	}
+}
+saludamos(salud)
+
+//                parámetros
+function persona(nombre,apellido)
+{
+    console.log(`yo soy ${nombre} ${apellido}`)
+}
+//          Argumentos
+persona("Ricardo", "Donoso")

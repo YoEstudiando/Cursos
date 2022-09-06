@@ -1,0 +1,82 @@
+
+/* h2 + p   <-- hermano adyacente
+{ 
+    color:red;
+} */
+/* Cambia el color a rojo a todos los P cercanos a un H2
+Tiene que estar uno encima y otro abajo:
+        <h2>Soy un h2</h2>
+        <p>Soy un p</p>
+*/
+
+/* h2 ~ p   <-- Hermano general
+{
+    color:red;
+} */
+
+/* Modificaremos a todos los P que tenga un hermano general H2.
+Siempre que tengan un h2 como hermano los p se modificaran.
+Siempre que esten en el mismo bloque o linea se modifica
+segun la regla de hermanos generales.
+Mientras exista un h2 en el bloque o linea todos lo p se modificaran
+el lugar en que se ubique el h2 influye, si está primero
+todo por debajo será modificado, pero si está al último no cambia
+ningun p que esté arriba.
+   <p>Ya no soy un parrafo</p>
+        <h3>soy un h3</h3>
+        <h2>Soy un h2</h2>
+        <p>soy un p</p>
+        <p>soy un p</p>
+Solo cambia los 2 ultimos p el primero no.
+*/
+
+/* div > p   <--Hijo
+{
+    color:red;
+} */
+
+/* El padre div que sea mayor a p; que p sea hija directa de div;
+    <div>
+        <article>
+            <p>soy un texto</p>
+        </article>
+        <article>
+            <p>soy un texto</p>
+        </article>
+        <section>
+            <div>
+                <p>soy un texto</p>
+            </div>
+        </section>
+        <p>soy un texto</p>
+    </div>
+Solo cambia el p que está dentro de section que éste tiene un div
+y el último p porque está dentro de un div.
+Mientras p esté encerrado o dentro de la etiqueta div se cambiará según las
+modificaciones que le hayamos dado.
+*/
+
+
+/* div p  <-- Descendiente
+{
+    color:red;
+} */
+
+/* Literalmente esto afecta todo dentro del contendor ignorando si está cerca 
+o no el p de un div;
+    <div>
+        <article>
+            <p>soy un texto</p>
+        </article>
+        <article>
+            <p>soy un texto</p>
+        </article>
+        <section>
+            <div>
+                <p>soy un texto</p>
+            </div>
+        </section>
+        <p>soy un texto</p>
+    </div>
+En este caso como los p están en el contendor div todo será modificado.Es cómo 
+una modificacion global cual tenga ralacion, en este caso p.

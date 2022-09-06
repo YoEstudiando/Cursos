@@ -1,0 +1,15 @@
+#titulo
+{
+    background:rgb(156, 212, 235);
+    margin:0;
+    text-align:center;
+    
+}
+#titulo:hover
+{
+    background:rgb(238, 110, 110);
+}
+body
+{
+    background:rgb(221, 197, 197);
+}

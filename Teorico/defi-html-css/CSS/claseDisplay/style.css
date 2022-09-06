@@ -1,0 +1,27 @@
+.block-element
+{
+    background-color: green;
+    margin:10px;
+    padding: 20px;  ;
+}
+body div
+{
+    background-color: green;
+}
+nav
+{
+    background-color: peachpuff;
+    padding:20px;
+    list-style: none;
+    text-align: center;
+    position: relative;
+}
+
+body ul li 
+{
+    display: inline-block;
+    font-size: 20px;
+    padding:0 20px;  
+    left:0; 
+    
+}

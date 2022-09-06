@@ -1,0 +1,22 @@
+
+/*Selector universal*/
+*
+{
+    box-sizing:border-box;
+    padding:0px;
+    margin:0px;
+}
+/*Es regla de oro usar un selector UNIVERSAL cada que empiezas una hoja nueva:
+BOX-SIZING -> suma los PADDINGy BORDER para que sí den el 
+100% del width y no le sume, de esa forma se evita hacer
+un scroll horizontal, expectacular.Solo funciona en manipulcion
+interna del la caja, por el contrario MARGIN SÍ le va sumar
+haciendo otra vez un scroll horizontal */
+main
+{
+    width:100% ;
+    height:500px;
+    border:10px solid grey;
+    padding:20px 35px;
+    
+}

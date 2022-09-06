@@ -1,0 +1,15 @@
+.parrafo
+{
+    color:red;
+}
+#texto
+{
+    color:blue;
+}
+/*Existen 3 formas de seleccionar etiquetas y darle 
+estilos 
+
+las
+ .CLASES
+ #ID
+ P <- el mismo nombre que la etiqueta.*/

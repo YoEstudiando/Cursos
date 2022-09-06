@@ -1,0 +1,35 @@
+.main-nav
+{
+    margin-top:10px;
+    list-style:none;
+    padding-left:0; 
+    background-color: #13a4a4;
+}
+.main-nav__items
+{
+    display:inline-block;
+}
+.main-nav__items a
+{
+    color:white;
+    padding:5px;
+    text-decoration:none;
+    border-radius:2px;
+}
+/*Pseudo clase :hover, cuando esté encima cambie, en este caso el color blue*/
+.main-nav__items a:hover
+{
+    color:blue;
+}
+/*Pseudo clase :active, cuando esté activo, en este caso cuando mantenemos
+click encima del texto se pone red*/
+.main-nav__items a:active
+{
+    color:red;
+}
+/*Pseudo elemento ::after, a la derecha del contenido*/
+.main-nav__items a::after
+{
+    content:" | ";
+}
+
