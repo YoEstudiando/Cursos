@@ -19,74 +19,68 @@
             --sm:14px;
             --md:16px;
             --lg:18px;
-            --oscuro:#232830;
         }
         body
         {
             margin:0;
             font-family:'Quicksand', sans-serif;
-            
-            
         }
-        #contenedor
+        .desktop-menu
         {
-            display:flex;
-            flex-direction:column;
-            width:100%;
-            height:100vh;
+            width:100px;
+            height:auto;
+            border:1px solid var(--very-light-pink);
+            border-radius:6px;
+            padding:20px 20px 0 20px;
         }
-        #contenedor h3
-        {
-            padding-left:40px;
-        }
-        #contenedor ul
+        .desktop-menu ul
         {
             list-style:none;
+            padding:0;
+            margin:0;
+        }
+        .desktop-menu ul li
+        {
+            text-align:end;
             
         }
-        #lista li
+        .desktop-menu ul li:nth-child(1),
+        .desktop-menu ul li:nth-child(2)
         {
-            padding-bottom:30px;
-        }
-        #lista li a
-        {
-            text-decoration: none;
-            color:black;
-            font-size:var(--md);
             font-weight:bold;
         }
-        #log 
+        .desktop-menu ul li:last-child
         {
-            height:100%;
-            display:flex;
-            flex-direction:column;
-            justify-content: end;
+            padding-top:20px;
+            border-top:1px solid var(--very-light-pink);
         }
-        #log li a
+        .desktop-menu ul li:last-child a
         {
-            text-decoration: none;
             color:var(--hospital-green);
-            font-size:var(--md);
-            font-weight:bold;
+            font-size:var(--sm);
         }
-
+        .desktop-menu ul li a
+        {
+            color: var(--black);
+            text-decoration:none;
+            margin-bottom:20px;
+            display:inline-block;
+        }
     </style>
+</head>
 <body>
-    <main id="contenedor">
-        <h3>CATEGORIES</h3>
-        <ul id="lista">
-            <li> <a href="/">All</a></li>
-            <li> <a href="/">Clothes</a></li>
-            <li> <a href="/">Electronics</a></li>
-            <li> <a href="/">Furnitures</a></li>
-            <li> <a href="/">Toys</a></li>
-            <li> <a href="/">Others</a></li>
-        </ul>
-        <ul id="log">
+    <div class="desktop-menu">
+        <ul>
             <li>
-                <a href="/">Log in</a>
+                <a href="/" class="title">My orders</a>
+            </li>
+            <li>
+                <a href="/">My account</a>
+            </li>
+            <li>
+                <a href="/">Sign out</a>
             </li>
         </ul>
-    </main> 
+    </div>
 </body>
 </html>
