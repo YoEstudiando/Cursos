@@ -1,0 +1,1 @@
+los @media queries van al ultimo del archivo de css
