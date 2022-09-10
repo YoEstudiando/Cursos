@@ -1,0 +1,1 @@
+Este es otro metodo de trabajo en responsive design.
