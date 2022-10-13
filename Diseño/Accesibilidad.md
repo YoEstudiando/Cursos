@@ -1,0 +1,8 @@
+-Utiliza el encabezado de manera ordenada para organizar la estrucutra del contenido ( HTML5 semático).
+-Utiliza tamaños de fuente accesibles(rem).
+-Utiliza colores que tengan un contraste adecuado.
+-Garantiza que el codigo de color no sea la unica de forma de relacionar contenido.
+-Diseña teniendo en cuenta los estados "focus" y "active" de los componentes.
+-Añade etiquetas y textos descriptivos a los campos de formulario.
+-Escribe contenido descriptivo que pueda reemplazar videos e imagenes.
+-Garantiza que las animacion no bloqueen el acceso al contenido.
