@@ -1,0 +1,24 @@
+
+doctype html
+html
+	head
+		meta(charset="UTF-8")
+		link(rel="stylesheet", href="#")
+	body
+    header
+        h1 PlatziGames
+        a.boton Registro
+    section.intro
+        .intro__imagen: img(src="#")
+				.intro__contenido
+					h2 Titulo principal
+					p.
+						Lorem ipsum, dolor sit amet consectetur adipisicing.
+					a.boton Leer Más
+
+//- no es necesario dejar el div.intro__imagen, con solo poner .intro__imagen ya sabe que es un div.
+//- en la interpolacion podemos tener un bloque y su unico elemento hijo junto -> intro__imagen: img(src="#")
+//- En caso de tener mucho texto horizontal, podemos usar un . + cambio de linea + tabulador, pug entiende que el texto sigue siendo parte de la etiqueta.->p.
+		Lorem ipsum, dolor sit amet consectetur adipisicing.| en caso de muchas linea usamos | para separas mas el tab.
+
+

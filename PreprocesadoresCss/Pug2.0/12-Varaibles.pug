@@ -1,0 +1,23 @@
+-var titulo = "Titulo principal"
+-var titulos = ["Titulo principal", "Subtitulo 1", "Subtitulo 2","Subtitulo 3"]
+doctype html
+html
+	head
+		meta(charset="UTF-8")
+		link(rel="stylesheet", href="#")
+	body
+    header
+        h1 PlatziGames
+        a.boton Registro
+    section.intro
+        .intro__imagen: img(src="#")
+				.intro__contenido
+					h2 #{titulos[0][1]}
+					p.
+					  Lorem ipsum, dolor sit amet consectetur adipisicing.
+					a.boton Leer Más 
+
+//- Cada variable debe ser antes del doctype html
+//- Tenemos 2 formas de invocar la variable: etiqueta + = + espacio + variable(h2= titulo), si haces espacio entre la etiqueta y el "=" dejas de llamarla.
+//-		La otra forma es etiqueta + espacio + # +{+ variables + } (h2 #{titulo})
+//- Tambien podemos declarar varios varoles, podemos hacer arrays. Se llama -> h2 #{titulos[0][1]} el 1 sirve para llamar el primer caracter del primer elemento del array.

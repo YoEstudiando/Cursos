@@ -1,0 +1,37 @@
+-var titulo = "Titulo principal"
+-var titulos = ["Titulo principal", "Subtitulo 1", "Subtitulo 2","Subtitulo 3"]
+-var usuario = ""; 
+doctype html
+html
+	head
+		meta(charset="UTF-8")
+		link(rel="stylesheet", href="#")
+	body
+    header
+        h1 PlatziGames
+				if usuario
+					a Hola #{usuario}
+				else
+        a.boton Registro
+    section.intro
+        .intro__imagen: img(src="#")
+				.intro__contenido
+					h2 #{titulos[0][1]}
+					p.
+					  Lorem ipsum, dolor sit amet consectetur adipisicing.
+					a.boton Leer Más
+		ul
+			each titulo in titulos
+				li=tituo
+
+//- loops each ** in ** con esto el li imprime los datos de nuestra arrays
+//- variable provisional, each titulo, el titulo no tiene nada que ver con el de arriba, es una varaible donde se guardan los varoles de la array.
+//- el each es para decirle a pug que invocamos el loops
+
+//- Condicionales 
+				if usuario
+					a Hola #{usuario}
+				else
+        a.boton Registro
+//- Si el usuario esta registrado dile hola, si no, pon Registro. En otras palabras la varaible Usuario debe ser para almancenar el nombre de aquel que se registre, entiendo que hara con js ese tipo de cambio.
+    
